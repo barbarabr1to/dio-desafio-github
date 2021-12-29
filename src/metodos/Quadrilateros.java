@@ -4,25 +4,30 @@ public class Quadrilateros {
 
 	public static void main(String[] args) {
 		
-		area(3);
-		area(4, 7);
-		area(5, 3, 2);
+		double areaQuadrado = area(3);
+		System.out.println("ÁREA DO QUADRADO: " + areaQuadrado);
+		
+		double areaRetangulo = area(4, 7);
+		System.out.println("ÁREA DO RETÂNGULO: " + areaRetangulo);
+		
+		double areaTrapezio = area(5, 3, 2);
+		System.out.println("ÁREA DO TRAPÉZIO: " + areaTrapezio);
 
 	}
 	
-	public static void area(double lado) {
+	public static double area(double lado) {
 		double areaQuadrado = lado * 2;
-		System.out.println("ÁREA DO QUADRADO: " + areaQuadrado);
+		return areaQuadrado;
 	}
 	
-	public static void area(double altura, double largura) {
+	public static double area(double altura, double largura) {
 		double areaRetangulo = altura * largura;
-		System.out.println("ÁREA DO RETÂNGULO: " + areaRetangulo);
+		return areaRetangulo;
 	}
 	
-	public static void area(double baseMaior, double baseMenor, double altura) {
+	public static double area(double baseMaior, double baseMenor, double altura) {
 		double areaTrapezio = ((baseMaior + baseMenor) * altura) / 2;
-		System.out.println("ÁREA DO TRAPÉZIO: " + areaTrapezio);
+		return areaTrapezio;
 	}
 
 }

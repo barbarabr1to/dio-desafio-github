@@ -1,4 +1,4 @@
-package metodos;
+package com.metodos;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -11,7 +11,6 @@ public class Cumprimentos {
 		String horaMinSec = new SimpleDateFormat("HH:mm:ss").format(dataHoraAtual);
 		
 		cumprimentos(horaMinSec);
-
 	}
 	
 	public static void cumprimentos(String horaMinSec) {
@@ -29,9 +28,7 @@ public class Cumprimentos {
 		if(hora >= 18) {
 			System.out.println("Boa noite!");
 		}
-		
 	}
-
 }
 
 

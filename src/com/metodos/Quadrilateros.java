@@ -1,4 +1,4 @@
-package metodos;
+package com.metodos;
 
 public class Quadrilateros {
 
@@ -16,18 +16,15 @@ public class Quadrilateros {
 	}
 	
 	public static double area(double lado) {
-		double areaQuadrado = lado * 2;
-		return areaQuadrado;
+		return lado * 2;
 	}
 	
 	public static double area(double altura, double largura) {
-		double areaRetangulo = altura * largura;
-		return areaRetangulo;
+		return altura * largura;
 	}
 	
 	public static double area(double baseMaior, double baseMenor, double altura) {
-		double areaTrapezio = ((baseMaior + baseMenor) * altura) / 2;
-		return areaTrapezio;
+		return ((baseMaior + baseMenor) * altura) / 2;
 	}
 
 }

@@ -1,4 +1,4 @@
-package metodos;
+package com.metodos;
 
 public class OperacoesBasicas {
 
